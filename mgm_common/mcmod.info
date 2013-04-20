@@ -1,0 +1,20 @@
+[
+{
+  "modid": "MGM",
+  "name": "Mythical Gods Mod",
+  "description": "Adds in real Mythical Gods into Minecraft!",
+  "version": "Alpha 1.0",
+  "url": "https://github.com/TAMteam/Mythical-Gods-Mod",
+  "updateUrl": "",
+  "authorList": [
+    "TAM modding team"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
