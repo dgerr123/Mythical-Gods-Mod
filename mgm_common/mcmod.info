@@ -2,15 +2,15 @@
 {
   "modid": "MGM",
   "name": "Mythical Gods Mod",
-  "description": "Adds in real Mythical Gods into Minecraft!",
+  "description": "May The Gods Be With You...",
   "version": "Alpha 1.0",
-  "url": "https://github.com/TAMteam/Mythical-Gods-Mod",
+  "url": "https://www.facebook.com/pages/Minecraft-Mythical-Gods-Mod/379177405522917",
   "updateUrl": "",
   "authorList": [
     "TAM modding team"
   ],
   "credits": "",
-  "logoFile": "",
+  "logoFile": "/mods/MGM/textures/logo/logo.png",
   "screenshots": [
   ],
   "parent":"",

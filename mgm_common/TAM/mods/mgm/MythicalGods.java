@@ -14,6 +14,9 @@ import cpw.mods.fml.common.network.NetworkMod;
 @NetworkMod(channels = {Reference.MOD_ID}, clientSideRequired = true, serverSideRequired = false)
 public class MythicalGods {
     
+   
+    
+    
 @PreInit
 public void preInit(FMLPreInitializationEvent event){
     
@@ -25,8 +28,7 @@ public void preInit(FMLPreInitializationEvent event){
 @Init
 public void init(FMLInitializationEvent event){
     
-    
-    
+  
     
    }
 
