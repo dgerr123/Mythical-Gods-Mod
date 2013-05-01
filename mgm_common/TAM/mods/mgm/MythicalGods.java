@@ -1,9 +1,10 @@
 package TAM.mods.mgm;
 
-import net.minecraft.item.EnumArmorMaterial;
-import net.minecraft.item.EnumToolMaterial;
-import net.minecraftforge.common.EnumHelper;
+import net.minecraft.creativetab.CreativeTabs;
+import TAM.mods.mgm.lib.BlockHelper;
+import TAM.mods.mgm.lib.ItemHelper;
 import TAM.mods.mgm.lib.Reference;
+import TAM.mods.mgm.tab.MythicalGodsTab;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PostInit;
@@ -17,16 +18,12 @@ import cpw.mods.fml.common.network.NetworkMod;
 @NetworkMod(channels = {Reference.MOD_ID}, clientSideRequired = true, serverSideRequired = false)
 public class MythicalGods {
     
-    @Mod.Instance("MythicalGods")
+    @Mod.Instance(Reference.MOD_ID)
     public static MythicalGods instance;
     
+    public static final CreativeTabs mythicalgodsTab = new MythicalGodsTab(Reference.MOD_ID);
     
-    static EnumArmorMaterial holyARMOR = EnumHelper.addArmorMaterial("holyARMOR", 860, new int[] { 860, 860, 860, 860 }, 860);
-    static EnumArmorMaterial unholyARMOR = EnumHelper.addArmorMaterial("unholyARMOR", 460, new int[] { 460, 460, 460, 460 }, 460);
-    
-    static EnumToolMaterial holyTOOL = EnumHelper.addToolMaterial("holyTOOL", 3, 3000, 12.0F, 888, 22);
-    static EnumToolMaterial unholyTOOL = EnumHelper.addToolMaterial("unholyTOOL", 3, 2345, 12.0F, 550, 22);
-
+   
     
     
     
@@ -43,7 +40,9 @@ public class MythicalGods {
     
 @PreInit
 public void preInit(FMLPreInitializationEvent event){
-    
+   
+    BlockHelper.init();
+    ItemHelper.init();
     
 
     
