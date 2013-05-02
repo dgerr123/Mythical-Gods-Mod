@@ -15,7 +15,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class ItemHelper {
 
     
-    private static final String[] itemNames = new String[] { "Staff", "Trident", "Lightning Bolt", "Battle Axe", "Holy Gem", "Holy Sword", "Unholy Gem", "Unholy Sword" };
+    private static final String[] itemNames = new String[] {"Holy Gem", "Holy Sword", "Unholy Gem", "Unholy Sword" };
     private static final ArrayList<Item> items = new ArrayList<Item>();
     
     //Armor new Material

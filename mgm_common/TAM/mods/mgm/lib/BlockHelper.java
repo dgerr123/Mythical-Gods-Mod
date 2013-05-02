@@ -3,24 +3,28 @@ package TAM.mods.mgm.lib;
 import java.util.ArrayList;
 
 import net.minecraft.block.Block;
+import TAM.mods.mgm.blocks.HolyBlock;
+import TAM.mods.mgm.blocks.OlympusPillar;
+import TAM.mods.mgm.blocks.UnholyBlock;
+import TAM.mods.mgm.blocks.UnholyOre;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class BlockHelper {
 
-    private static final String[] blockNames = new String[] { "Holy Block", "Olympus Piller", "Unholy Block", "Unholy Ore" };
+    private static final String[] blockNames = new String[] { "Holy Block", "Olympus Pillar", "Unholy Block", "Unholy Ore" };
     private static final ArrayList<Block> blocks = new ArrayList<Block>();
     
     public static final Block unholyBlock = new UnholyBlock(ReferenceID.UNHOLYBLOCK);
     public static final Block unholyOre = new UnholyOre(ReferenceID.UNHOLYORE);
-    public static final Block OlympusPiller = new OlympusPiller(ReferenceID.OLYMPUSPILLER);
+    public static final Block OlympusPillar = new OlympusPillar(ReferenceID.OLYMPUSPILLAR);
     public static final Block holyBlock = new HolyBlock(ReferenceID.HOLYBLOCK);
     
     
     static {
        
         blocks.add(holyBlock);
-        blocks.add(OlympusPiller);
+        blocks.add(OlympusPillar);
         blocks.add(unholyBlock);
         blocks.add(unholyOre);
     }

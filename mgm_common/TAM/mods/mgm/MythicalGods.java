@@ -3,6 +3,8 @@ package TAM.mods.mgm;
 import net.minecraft.creativetab.CreativeTabs;
 import TAM.mods.mgm.lib.BlockHelper;
 import TAM.mods.mgm.lib.ItemHelper;
+import TAM.mods.mgm.lib.LootHelper;
+import TAM.mods.mgm.lib.RecipeHelper;
 import TAM.mods.mgm.lib.Reference;
 import TAM.mods.mgm.tab.MythicalGodsTab;
 import cpw.mods.fml.common.Mod;
@@ -13,6 +15,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 @NetworkMod(channels = {Reference.MOD_ID}, clientSideRequired = true, serverSideRequired = false)
@@ -43,9 +46,10 @@ public void preInit(FMLPreInitializationEvent event){
    
     BlockHelper.init();
     ItemHelper.init();
-    
+    RecipeHelper.init();
+    LootHelper.init();
 
-    
+    LanguageRegistry.instance().addStringLocalization("itemGroup." + Reference.MOD_ID, "Mythical Gods Mod");
     
     
    }
