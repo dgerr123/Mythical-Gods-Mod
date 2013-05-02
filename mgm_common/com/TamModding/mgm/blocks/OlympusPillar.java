@@ -1,4 +1,4 @@
-package TAM.mods.mgm.blocks;
+package com.TamModding.mgm.blocks;
 
 import net.minecraft.block.material.Material;
 

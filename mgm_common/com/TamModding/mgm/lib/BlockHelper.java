@@ -1,12 +1,13 @@
-package TAM.mods.mgm.lib;
+package com.TamModding.mgm.lib;
 
 import java.util.ArrayList;
 
+import com.TamModding.mgm.blocks.HolyBlock;
+import com.TamModding.mgm.blocks.OlympusPillar;
+import com.TamModding.mgm.blocks.UnholyBlock;
+import com.TamModding.mgm.blocks.UnholyOre;
+
 import net.minecraft.block.Block;
-import TAM.mods.mgm.blocks.HolyBlock;
-import TAM.mods.mgm.blocks.OlympusPillar;
-import TAM.mods.mgm.blocks.UnholyBlock;
-import TAM.mods.mgm.blocks.UnholyOre;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 

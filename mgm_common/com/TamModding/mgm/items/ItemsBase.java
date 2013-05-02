@@ -1,9 +1,10 @@
-package TAM.mods.mgm.items;
+package com.TamModding.mgm.items;
+
+import com.TamModding.mgm.MythicalGods;
+import com.TamModding.mgm.lib.TextureHelper;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
-import TAM.mods.mgm.MythicalGods;
-import TAM.mods.mgm.lib.TextureHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

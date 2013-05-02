@@ -1,4 +1,6 @@
-package TAM.mods.mgm.tools;
+package com.TamModding.mgm.tools;
+
+import com.TamModding.mgm.items.ItemsBase;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -9,7 +11,6 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import TAM.mods.mgm.items.ItemsBase;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

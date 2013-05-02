@@ -1,4 +1,4 @@
-package TAM.mods.mgm.tools;
+package com.TamModding.mgm.tools;
 
 import net.minecraft.item.EnumToolMaterial;
 

@@ -1,12 +1,12 @@
-package TAM.mods.mgm.blocks;
+package com.TamModding.mgm.blocks;
 
 import net.minecraft.block.material.Material;
 
-public class UnholyBlock extends BlocksBase {
+public class HolyBlock extends BlocksBase {
 
-    public UnholyBlock(int par1) {
+    public HolyBlock(int par1) {
         super(par1, Material.iron);
-        super.registerTexture("UnholyBlock");
+        super.registerTexture("HolyBlock");
         this.setHardness(10.0F);
         this.setResistance(10.0F);
     }

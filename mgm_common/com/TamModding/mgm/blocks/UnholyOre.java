@@ -1,9 +1,10 @@
-package TAM.mods.mgm.blocks;
+package com.TamModding.mgm.blocks;
 
 import java.util.Random;
 
+import com.TamModding.mgm.lib.ItemHelper;
+
 import net.minecraft.block.material.Material;
-import TAM.mods.mgm.lib.ItemHelper;
 
 public class UnholyOre extends BlocksBase {
 

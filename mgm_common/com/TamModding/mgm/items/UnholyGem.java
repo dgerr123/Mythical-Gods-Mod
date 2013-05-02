@@ -1,4 +1,4 @@
-package TAM.mods.mgm.items;
+package com.TamModding.mgm.items;
 
 public class UnholyGem extends ItemsBase {
 

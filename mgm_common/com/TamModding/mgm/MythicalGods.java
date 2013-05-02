@@ -1,12 +1,13 @@
-package TAM.mods.mgm;
+package com.TamModding.mgm;
+
+import com.TamModding.mgm.lib.BlockHelper;
+import com.TamModding.mgm.lib.ItemHelper;
+import com.TamModding.mgm.lib.LootHelper;
+import com.TamModding.mgm.lib.RecipeHelper;
+import com.TamModding.mgm.lib.Reference;
+import com.TamModding.mgm.tab.MythicalGodsTab;
 
 import net.minecraft.creativetab.CreativeTabs;
-import TAM.mods.mgm.lib.BlockHelper;
-import TAM.mods.mgm.lib.ItemHelper;
-import TAM.mods.mgm.lib.LootHelper;
-import TAM.mods.mgm.lib.RecipeHelper;
-import TAM.mods.mgm.lib.Reference;
-import TAM.mods.mgm.tab.MythicalGodsTab;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PostInit;

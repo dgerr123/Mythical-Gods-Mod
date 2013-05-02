@@ -1,4 +1,4 @@
-package TAM.mods.mgm.lib;
+package com.TamModding.mgm.lib;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

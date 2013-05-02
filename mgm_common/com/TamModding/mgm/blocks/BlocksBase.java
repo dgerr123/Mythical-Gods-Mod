@@ -1,13 +1,14 @@
-package TAM.mods.mgm.blocks;
+package com.TamModding.mgm.blocks;
 
 import java.util.Random;
+
+import com.TamModding.mgm.MythicalGods;
+import com.TamModding.mgm.lib.TextureHelper;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.util.Icon;
-import TAM.mods.mgm.MythicalGods;
-import TAM.mods.mgm.lib.TextureHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

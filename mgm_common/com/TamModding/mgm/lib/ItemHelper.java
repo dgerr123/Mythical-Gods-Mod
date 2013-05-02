@@ -1,15 +1,16 @@
-package TAM.mods.mgm.lib;
+package com.TamModding.mgm.lib;
 
 import java.util.ArrayList;
+
+import com.TamModding.mgm.items.HolyGem;
+import com.TamModding.mgm.items.UnholyGem;
+import com.TamModding.mgm.tools.HolySword;
+import com.TamModding.mgm.tools.UnholySword;
 
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.EnumHelper;
-import TAM.mods.mgm.items.HolyGem;
-import TAM.mods.mgm.items.UnholyGem;
-import TAM.mods.mgm.tools.HolySword;
-import TAM.mods.mgm.tools.UnholySword;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class ItemHelper {

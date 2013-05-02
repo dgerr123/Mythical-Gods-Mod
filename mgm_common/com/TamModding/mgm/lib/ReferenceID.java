@@ -1,4 +1,4 @@
-package TAM.mods.mgm.lib;
+package com.TamModding.mgm.lib;
 
 public class ReferenceID {// BLOCK ID REFERENCE
     public static final int HOLYBLOCK = 1021;

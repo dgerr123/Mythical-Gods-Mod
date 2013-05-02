@@ -1,8 +1,9 @@
-package TAM.mods.mgm.tab;
+package com.TamModding.mgm.tab;
+
+import com.TamModding.mgm.lib.ItemHelper;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
-import TAM.mods.mgm.lib.ItemHelper;
 
 public class MythicalGodsTab extends CreativeTabs {
 

@@ -1,4 +1,4 @@
-package TAM.mods.mgm.lib;
+package com.TamModding.mgm.lib;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.util.Icon;
