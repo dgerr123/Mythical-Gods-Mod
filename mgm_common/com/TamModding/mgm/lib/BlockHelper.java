@@ -13,15 +13,32 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class BlockHelper {
 
+
+    // Names of all the blocks, in the same order as registered lower in the class
     private static final String[] blockNames = new String[] { "Holy Block", "Olympus Pillar", "Unholy Block", "Unholy Ore" };
+   
+ // Arraylist for containing all registered blocks
     private static final ArrayList<Block> blocks = new ArrayList<Block>();
     
+    
+
+    /*
+     * Registering all the different blocks
+     * Use ReferenceID.BLOCKNAME for the ID
+     */
     public static final Block unholyBlock = new UnholyBlock(ReferenceID.UNHOLYBLOCK);
     public static final Block unholyOre = new UnholyOre(ReferenceID.UNHOLYORE);
     public static final Block OlympusPillar = new OlympusPillar(ReferenceID.OLYMPUSPILLAR);
     public static final Block holyBlock = new HolyBlock(ReferenceID.HOLYBLOCK);
     
     
+    
+    
+    /*
+     * Adding all Blocks to the main BlockArray
+     * Make sure all blocks are registered here and that the NamesArray contains the same
+     * number of items, otherwise this would end in a crash.
+     */
     static {
        
         blocks.add(holyBlock);
@@ -30,6 +47,11 @@ public class BlockHelper {
         blocks.add(unholyOre);
     }
     
+    
+    
+    /**
+     * Initialize all the Blocks and their names.
+     */
     public static void init() {
         // Give all blocks a unlocalizedName
         for (int i = 0; i < blockNames.length; i++) {

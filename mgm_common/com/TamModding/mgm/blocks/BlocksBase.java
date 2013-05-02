@@ -26,16 +26,35 @@ public class BlocksBase extends Block {
             this.setCreativeTab(MythicalGods.mythicalgodsTab);
         }
 
+        
+        /**
+         * Setup single texture for the block
+         * @param text Texture name for all sides
+         */
         public void registerTexture(String text) {
             tileSideName = tileTopName = tileBottomName = text;
         }
 
+        
+        
+        /**
+         * Setup multiple textures for the block
+         * @param side Texture name for the sides
+         * @param top Texture name for the top
+         * @param bottom Texture name for the bottom
+         */
         public void registerTexture(String side, String top, String bottom) {
             tileSideName = side;
             tileTopName = top;
             tileBottomName = bottom;
         }
 
+        
+        /*
+         * Minecraft functions to make the textures work.
+         * registerIcons -> Registers the icons into the variables
+         * getIcon -> Returns the right icon based on side and metadata
+         */
         @Override
         @SideOnly(Side.CLIENT)
         public void registerIcons(IconRegister par1IconRegister) {
@@ -50,6 +69,12 @@ public class BlocksBase extends Block {
             return side == 1 ? tileTop : side == 0 ? tileBottom : tileSide;
         }
 
+        
+        /*
+         * Mincraft functions to set standard drops and drop-quantities
+         * idDropped -> Block ID when dropped
+         * quantityDropped -> Ammount of items dropped when broken
+         */
         @Override
         public int idDropped(int par1, Random par2Random, int par3) {
             return blockID;

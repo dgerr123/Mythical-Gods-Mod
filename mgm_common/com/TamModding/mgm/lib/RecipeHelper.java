@@ -7,6 +7,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class RecipeHelper {
 
     
+    /**
+     * Initializes all the Recipes
+     */
+    
     public static void init() {
         // Add crafting recipes
         GameRegistry.addRecipe(new ItemStack(ItemHelper.holyGem), new Object[] { " G ", "GDG", " G ", 'D', Item.diamond, 'G', ItemHelper.unholyGem });
