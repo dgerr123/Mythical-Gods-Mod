@@ -8,7 +8,9 @@ public class OlympusPillar extends BlocksBase {
         super(par1, Material.rock);
         super.registerTexture("OlympusPillarSide", "OlympusPillarTop",
                 "OlympusPillarBottom");
-        this.setHardness(6.0F);
+        this.setHardness(3.0F);
         this.setResistance(10.0F);
     }
+
+
 }

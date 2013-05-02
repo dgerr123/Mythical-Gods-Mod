@@ -31,15 +31,7 @@ public class MythicalGods {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
     
 @PreInit
 public void preInit(FMLPreInitializationEvent event){
