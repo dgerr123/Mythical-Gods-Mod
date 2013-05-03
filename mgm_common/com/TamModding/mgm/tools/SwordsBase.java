@@ -1,7 +1,5 @@
 package com.TamModding.mgm.tools;
 
-import com.TamModding.mgm.items.ItemsBase;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
@@ -11,6 +9,9 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+
+import com.TamModding.mgm.items.ItemsBase;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -32,8 +33,7 @@ public class SwordsBase extends ItemsBase {
     }
 
     /**
-     * Returns the strength of the stack against a given block. 1.0F base,
-     * (Quality+1)*2 if correct blocktype, 1.5F if sword
+     * Returns the strength of the stack against a given block. 1.0F base, (Quality+1)*2 if correct blocktype, 1.5F if sword
      */
     @Override
     public float getStrVsBlock(ItemStack par1ItemStack, Block par2Block) {
@@ -41,30 +41,22 @@ public class SwordsBase extends ItemsBase {
             return 15.0F;
         else {
             Material material = par2Block.blockMaterial;
-            return material != Material.plants && material != Material.vine
-                    && material != Material.coral
-                    && material != Material.leaves
-                    && material != Material.pumpkin ? 1.0F : 1.5F;
+            return material != Material.plants && material != Material.vine && material != Material.coral && material != Material.leaves && material != Material.pumpkin ? 1.0F : 1.5F;
         }
     }
 
     /**
-     * Current implementations of this method in child classes do not use the
-     * entry argument beside ev. They just raise the damage on the stack.
+     * Current implementations of this method in child classes do not use the entry argument beside ev. They just raise the damage on the stack.
      */
     @Override
-    public boolean hitEntity(ItemStack par1ItemStack,
-            EntityLiving par2EntityLiving, EntityLiving par3EntityLiving) {
+    public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving) {
         par1ItemStack.damageItem(1, par3EntityLiving);
         return true;
     }
 
     @Override
-    public boolean onBlockDestroyed(ItemStack par1ItemStack, World par2World,
-            int par3, int par4, int par5, int par6,
-            EntityLiving par7EntityLiving) {
-        if (Block.blocksList[par3]
-                .getBlockHardness(par2World, par4, par5, par6) != 0.0D) {
+    public boolean onBlockDestroyed(ItemStack par1ItemStack, World par2World, int par3, int par4, int par5, int par6, EntityLiving par7EntityLiving) {
+        if (Block.blocksList[par3].getBlockHardness(par2World, par4, par5, par6) != 0.0D) {
             par1ItemStack.damageItem(2, par7EntityLiving);
         }
 
@@ -89,8 +81,7 @@ public class SwordsBase extends ItemsBase {
     }
 
     /**
-     * returns the action that specifies what animation to play when the items
-     * is being used
+     * returns the action that specifies what animation to play when the items is being used
      */
     @Override
     public EnumAction getItemUseAction(ItemStack par1ItemStack) {
@@ -106,14 +97,11 @@ public class SwordsBase extends ItemsBase {
     }
 
     /**
-     * Called whenever this item is equipped and the right mouse button is
-     * pressed. Args: itemStack, world, entityPlayer
+     * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
      */
     @Override
-    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World,
-            EntityPlayer par3EntityPlayer) {
-        par3EntityPlayer.setItemInUse(par1ItemStack,
-                this.getMaxItemUseDuration(par1ItemStack));
+    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer) {
+        par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
         return par1ItemStack;
     }
 
@@ -126,8 +114,7 @@ public class SwordsBase extends ItemsBase {
     }
 
     /**
-     * Return the enchantability factor of the item, most of the time is based
-     * on material.
+     * Return the enchantability factor of the item, most of the time is based on material.
      */
     @Override
     public int getItemEnchantability() {
@@ -145,11 +132,8 @@ public class SwordsBase extends ItemsBase {
      * Return whether this item is repairable in an anvil.
      */
     @Override
-    public boolean getIsRepairable(ItemStack par1ItemStack,
-            ItemStack par2ItemStack) {
-        return toolMaterial.getToolCraftingMaterial() == par2ItemStack.itemID ? true
-                : super.getIsRepairable(par1ItemStack, par2ItemStack);
+    public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack) {
+        return toolMaterial.getToolCraftingMaterial() == par2ItemStack.itemID ? true : super.getIsRepairable(par1ItemStack, par2ItemStack);
     }
-
 
 }

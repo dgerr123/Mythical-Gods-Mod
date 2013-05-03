@@ -2,53 +2,43 @@ package com.TamModding.mgm.lib;
 
 import java.util.ArrayList;
 
+import net.minecraft.block.Block;
+
 import com.TamModding.mgm.blocks.HolyBlock;
 import com.TamModding.mgm.blocks.OlympusPillar;
 import com.TamModding.mgm.blocks.UnholyBlock;
 import com.TamModding.mgm.blocks.UnholyOre;
 
-import net.minecraft.block.Block;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class BlockHelper {
 
-
     // Names of all the blocks, in the same order as registered lower in the class
     private static final String[] blockNames = new String[] { "Holy Block", "Olympus Pillar", "Unholy Block", "Unholy Ore" };
-   
- // Arraylist for containing all registered blocks
+
+    // Arraylist for containing all registered blocks
     private static final ArrayList<Block> blocks = new ArrayList<Block>();
-    
-    
 
     /*
-     * Registering all the different blocks
-     * Use ReferenceID.BLOCKNAME for the ID
+     * Registering all the different blocks Use ReferenceID.BLOCKNAME for the ID
      */
     public static final Block unholyBlock = new UnholyBlock(ReferenceID.UNHOLYBLOCK);
     public static final Block unholyOre = new UnholyOre(ReferenceID.UNHOLYORE);
     public static final Block OlympusPillar = new OlympusPillar(ReferenceID.OLYMPUSPILLAR);
     public static final Block holyBlock = new HolyBlock(ReferenceID.HOLYBLOCK);
-    
-    
-    
-    
+
     /*
-     * Adding all Blocks to the main BlockArray
-     * Make sure all blocks are registered here and that the NamesArray contains the same
-     * number of items, otherwise this would end in a crash.
+     * Adding all Blocks to the main BlockArray Make sure all blocks are registered here and that the NamesArray contains the same number of items,
+     * otherwise this would end in a crash.
      */
     static {
-       
         blocks.add(holyBlock);
         blocks.add(OlympusPillar);
         blocks.add(unholyBlock);
         blocks.add(unholyOre);
     }
-    
-    
-    
+
     /**
      * Initialize all the Blocks and their names.
      */

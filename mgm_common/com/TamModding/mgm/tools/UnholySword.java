@@ -9,6 +9,4 @@ public class UnholySword extends SwordsBase {
         super.registerTextures("UnholySword");
     }
 
-
-
 }

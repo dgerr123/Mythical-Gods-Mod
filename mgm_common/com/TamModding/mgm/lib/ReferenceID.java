@@ -1,6 +1,7 @@
 package com.TamModding.mgm.lib;
 
-public class ReferenceID {// BLOCK ID REFERENCE
+public class ReferenceID {
+    // BLOCK ID REFERENCE
     public static final int HOLYBLOCK = 1021;
     public static final int OLYMPUSPILLAR = 1022;
     public static final int UNHOLYBLOCK = 1023;
@@ -15,6 +16,3 @@ public class ReferenceID {// BLOCK ID REFERENCE
     public static final int UNHOLYGEM = 1031;
     public static final int UNHOLYSWORD = 1032;
 }
-
-
-

@@ -9,6 +9,3 @@ public class UnholyGem extends ItemsBase {
     }
 
 }
-
-
-

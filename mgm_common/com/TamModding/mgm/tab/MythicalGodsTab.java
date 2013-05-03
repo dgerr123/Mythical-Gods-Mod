@@ -1,9 +1,9 @@
 package com.TamModding.mgm.tab;
 
-import com.TamModding.mgm.lib.ItemHelper;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+
+import com.TamModding.mgm.lib.ItemHelper;
 
 public class MythicalGodsTab extends CreativeTabs {
 
@@ -11,6 +11,7 @@ public class MythicalGodsTab extends CreativeTabs {
         super(label);
     }
 
+    @Override
     public ItemStack getIconItemStack() {
         return new ItemStack(ItemHelper.holyGem);
     }

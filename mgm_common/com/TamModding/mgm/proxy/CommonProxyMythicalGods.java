@@ -1,12 +1,8 @@
 package com.TamModding.mgm.proxy;
 
-public class CommonProxyMythicalGods { 
-    public void registerRenders(){
-    
+public class CommonProxyMythicalGods {
+    public void registerRenders() {
 
     }
 
 }
-
-
-
