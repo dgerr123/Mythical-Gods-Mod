@@ -20,16 +20,12 @@ public class SwordsBase extends ItemsBase {
     private int weaponDamage;
     private final EnumToolMaterial toolMaterial;
 
-    public SwordsBase(int par1, EnumToolMaterial par2EnumToolMaterial) {
-        super(par1);
-        toolMaterial = par2EnumToolMaterial;
+    public SwordsBase(int itemID, EnumToolMaterial swordEnumToolMaterial) {
+        super(itemID);
+        toolMaterial = swordEnumToolMaterial;
         maxStackSize = 1;
-        this.setMaxDamage(par2EnumToolMaterial.getMaxUses());
-        weaponDamage = 4 + par2EnumToolMaterial.getDamageVsEntity();
-    }
-
-    public int func_82803_g() {
-        return toolMaterial.getDamageVsEntity();
+        this.setMaxDamage(swordEnumToolMaterial.getMaxUses());
+        weaponDamage = 4 + swordEnumToolMaterial.getDamageVsEntity();
     }
 
     /**
