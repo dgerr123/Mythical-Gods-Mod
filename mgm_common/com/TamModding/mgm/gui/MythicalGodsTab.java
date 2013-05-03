@@ -1,4 +1,4 @@
-package com.TamModding.mgm.tab;
+package com.TamModding.mgm.gui;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
