@@ -12,7 +12,7 @@ public class TextureHelper {
      * @return The texture Icon
      */
     public static Icon getIconFromTextureName(IconRegister iconRegister, String name) {
-        return iconRegister.registerIcon(Reference.MOD_ID + ":" + name);
+        return iconRegister.registerIcon(Reference.RESOURCE_FOLDER + ":" + name);
     }
 
 }
