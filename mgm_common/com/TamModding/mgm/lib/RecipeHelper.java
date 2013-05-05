@@ -24,7 +24,7 @@ public class RecipeHelper {
         
         // Recipes for the (Un)Holy swords
         GameRegistry.addRecipe(new ItemStack(ItemHelper.unholySword), new Object[] { " G ", "NGN", " S ", 'S', Item.blazeRod, 'G', ItemHelper.unholyGem, 'N', Item.netherStar });
-        GameRegistry.addRecipe(new ItemStack(ItemHelper.holySword), new Object[] { " G ", " G ", " S ", 'S', ItemHelper.unholySword, 'G', ItemHelper.holyGem });
+        GameRegistry.addRecipe(new ItemStack(ItemHelper.holySword), new Object[] { " G ", " G ", "DSD", 'S', ItemHelper.unholySword, 'G', ItemHelper.holyGem, 'D', Item.diamond });
         
     }
 }
