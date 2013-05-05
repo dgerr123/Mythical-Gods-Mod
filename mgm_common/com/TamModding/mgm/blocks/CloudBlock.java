@@ -10,9 +10,6 @@ public class CloudBlock extends BlocksBase {
         this.setHardness(1.0F);
         this.setResistance(1.0F);
         this.setStepSound(soundClothFootstep);
-       
-       
-       
     }
    
 }
