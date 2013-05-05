@@ -9,5 +9,6 @@ public class HolyBlock extends BlocksBase {
         super.registerTexture("HolyBlock");
         this.setHardness(10.0F);
         this.setResistance(10.0F);
+        this.setStepSound(soundMetalFootstep);
     }
 }

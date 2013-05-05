@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import net.minecraft.block.Block;
 
+import com.TamModding.mgm.blocks.CloudBlock;
 import com.TamModding.mgm.blocks.HolyBlock;
 import com.TamModding.mgm.blocks.OlympusPillar;
 import com.TamModding.mgm.blocks.UnholyBlock;
@@ -15,7 +16,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class BlockHelper {
 
     // Names of all the blocks, in the same order as registered lower in the class
-    private static final String[] blockNames = new String[] { "Holy Block", "Olympus Pillar", "Unholy Block", "Unholy Ore" };
+    private static final String[] blockNames = new String[] { "Holy Block", "Olympus Pillar", "Unholy Block", "Unholy Ore", "CloudBlock" };
 
     // Arraylist for containing all registered blocks
     private static final ArrayList<Block> blocks = new ArrayList<Block>();
@@ -27,6 +28,7 @@ public class BlockHelper {
     public static final Block unholyOre = new UnholyOre(ReferenceID.UNHOLYORE);
     public static final Block OlympusPillar = new OlympusPillar(ReferenceID.OLYMPUSPILLAR);
     public static final Block holyBlock = new HolyBlock(ReferenceID.HOLYBLOCK);
+    public static final Block CloudBlock = new CloudBlock(ReferenceID.CLOUDBLOCK);
 
     /*
      * Adding all Blocks to the main BlockArray Make sure all blocks are registered here and that the NamesArray contains the same number of items,
@@ -37,6 +39,7 @@ public class BlockHelper {
         blocks.add(OlympusPillar);
         blocks.add(unholyBlock);
         blocks.add(unholyOre);
+        blocks.add(CloudBlock);
     }
 
     /**

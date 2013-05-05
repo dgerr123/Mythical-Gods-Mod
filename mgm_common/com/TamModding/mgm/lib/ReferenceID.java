@@ -6,6 +6,7 @@ public class ReferenceID {
     public static final int OLYMPUSPILLAR = 1022;
     public static final int UNHOLYBLOCK = 1023;
     public static final int UNHOLYORE = 1024;
+    public static final int CLOUDBLOCK = 1033;
     // ITEM ID REFERENCE
     public static final int TRIDENT = 1025;
     public static final int STAFF = 1026;

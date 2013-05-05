@@ -9,5 +9,6 @@ public class UnholyBlock extends BlocksBase {
         super.registerTexture("UnholyBlock");
         this.setHardness(10.0F);
         this.setResistance(10.0F);
+        this.setStepSound(soundMetalFootstep);
     }
 }
