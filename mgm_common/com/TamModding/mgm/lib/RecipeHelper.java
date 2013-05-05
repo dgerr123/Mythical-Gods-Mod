@@ -17,5 +17,7 @@ public class RecipeHelper {
         GameRegistry.addRecipe(new ItemStack(ItemHelper.holySword), new Object[] { " G ", " G ", " S ", 'S', ItemHelper.unholySword, 'G', ItemHelper.holyGem });
         GameRegistry.addRecipe(new ItemStack(BlockHelper.unholyBlock), new Object[] {"GGG", "GGG", "GGG", 'G', ItemHelper.unholyGem});
         GameRegistry.addRecipe(new ItemStack(BlockHelper.holyBlock), new Object[] {"GGG", "GGG", "GGG", 'G', ItemHelper.holyGem});
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHelper.unholyGem, 9), BlockHelper.unholyBlock);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHelper.holyGem, 9), BlockHelper.holyBlock);
     }
 }
