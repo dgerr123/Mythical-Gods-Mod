@@ -16,4 +16,7 @@ public class ReferenceID {
     public static final int HOLYSWORD = 1030;
     public static final int UNHOLYGEM = 1031;
     public static final int UNHOLYSWORD = 1032;
+    public static final int NETHERDUST = 1033;
+    public static final int NETHERROD = 1034;
+    
 }

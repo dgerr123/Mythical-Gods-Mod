@@ -3,6 +3,7 @@ package com.TamModding.mgm.lib;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.FurnaceRecipes;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class RecipeHelper {
@@ -23,8 +24,12 @@ public class RecipeHelper {
         GameRegistry.addRecipe(new ItemStack(ItemHelper.holyGem), new Object[] { "DGD", "GBG", "DGD", 'D', Item.diamond, 'G', ItemHelper.unholyGem, 'B', Block.blockDiamond });
         
         // Recipes for the (Un)Holy swords
-        GameRegistry.addRecipe(new ItemStack(ItemHelper.unholySword), new Object[] { " G ", "NGN", " S ", 'S', Item.blazeRod, 'G', ItemHelper.unholyGem, 'N', Item.netherStar });
+        GameRegistry.addRecipe(new ItemStack(ItemHelper.unholySword), new Object[] { " G ", " G ", " S ", 'S', ItemHelper.netherRod, 'G', ItemHelper.unholyGem});
         GameRegistry.addRecipe(new ItemStack(ItemHelper.holySword), new Object[] { " G ", " G ", "DSD", 'S', ItemHelper.unholySword, 'G', ItemHelper.holyGem, 'D', Item.diamond });
+        
+        // Adding recipe's that belong to the nether rod
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHelper.netherDust), new Object[]{ new ItemStack(Item.ghastTear), new ItemStack(Block.obsidian), new ItemStack(Item.blazePowder), new ItemStack(Item.netherStar) });
+        FurnaceRecipes.smelting().addSmelting(ItemHelper.netherDust.itemID, 0, new ItemStack(ItemHelper.netherRod), 1.0F);
         
     }
 }

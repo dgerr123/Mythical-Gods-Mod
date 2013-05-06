@@ -8,6 +8,8 @@ import net.minecraft.item.Item;
 import net.minecraftforge.common.EnumHelper;
 
 import com.TamModding.mgm.items.HolyGem;
+import com.TamModding.mgm.items.NetherDust;
+import com.TamModding.mgm.items.NetherRod;
 import com.TamModding.mgm.items.UnholyGem;
 import com.TamModding.mgm.tools.HolySword;
 import com.TamModding.mgm.tools.UnholySword;
@@ -17,12 +19,12 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class ItemHelper {
 
     // Names of all the items, in the same order as registered lower in the class.
-    private static final String[] itemNames = new String[] { "Holy Gem", "Holy Sword", "Unholy Gem", "Unholy Sword" };
+    private static final String[] itemNames = new String[] { "Holy Gem", "Holy Sword", "Unholy Gem", "Unholy Sword", "Nether Dust", "Nether Rod" };
 
     // Arraylist for containing all registered items
     private static final ArrayList<Item> items = new ArrayList<Item>();
 
-    // EnumToolMaterial for different armors
+    // EnumArmorMaterial for different armors
     static EnumArmorMaterial holyARMOR = EnumHelper.addArmorMaterial("holyARMOR", 860, new int[] { 860, 860, 860, 860 }, 860);
     static EnumArmorMaterial unholyARMOR = EnumHelper.addArmorMaterial("unholyARMOR", 460, new int[] { 460, 460, 460, 460 }, 460);
 
@@ -37,7 +39,9 @@ public class ItemHelper {
     public static final Item holySword = new HolySword(ReferenceID.HOLYSWORD, holyTOOL);
     public static final Item unholyGem = new UnholyGem(ReferenceID.UNHOLYGEM);
     public static final Item unholySword = new UnholySword(ReferenceID.UNHOLYSWORD, unholyTOOL);
-
+    public static final Item netherDust = new NetherDust(ReferenceID.NETHERDUST);
+    public static final Item netherRod = new NetherRod(ReferenceID.NETHERROD);
+    
     /*
      * Adding all Items to the main ItemArray Make sure all items are registered here and that the NamesArray contains the same number of items,
      * otherwise this would end in a crash.
@@ -47,6 +51,8 @@ public class ItemHelper {
         items.add(holySword);
         items.add(unholyGem);
         items.add(unholySword);
+        items.add(netherDust);
+        items.add(netherRod);
     }
 
     /**
