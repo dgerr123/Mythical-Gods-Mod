@@ -2,6 +2,7 @@ package com.TamModding.mgm;
 
 import net.minecraft.creativetab.CreativeTabs;
 
+import com.TamModding.mgm.cape.CapeHelper;
 import com.TamModding.mgm.gui.MythicalGodsTab;
 import com.TamModding.mgm.lib.BlockHelper;
 import com.TamModding.mgm.lib.ItemHelper;
@@ -36,6 +37,8 @@ public class MythicalGods {
         // Initialize the Recipes and Dungeon loot
         RecipeHelper.init();
         LootHelper.init();
+        // Initialize the CapeHelper
+        CapeHelper.init();
         // Set the name for the creative tab
         LanguageRegistry.instance().addStringLocalization("itemGroup." + Reference.MOD_ID, "Mythical Gods Mod");
     }
