@@ -16,5 +16,6 @@ public class Reference {
     public static final String PATH_CAPES_TESTER = "https://dl.dropboxusercontent.com/u/31038502/TAM%20Capes/tester.png";
     public static final String HTTP_CAPES_DEV = "http://tammodding.com/dev.txt";
     public static final String HTTP_CAPES_TESTER = "http://tammodding.com/tester.txt";
+    public static final int CAPE_TICK_SKIP = 200; // Time in ticks (20 tick = 1 sec)
     
 }

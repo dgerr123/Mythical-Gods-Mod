@@ -21,7 +21,7 @@ public class CapeTickHandler implements ITickHandler{
     
     @Override
     public void tickStart(EnumSet<TickType> type, Object... tickData) {
-        if (tickSkip >= 200) {
+        if (tickSkip >= Reference.CAPE_TICK_SKIP) {
             if ((mc.theWorld != null) && (mc.theWorld.playerEntities.size() > 0)) {
                 // Player entitys
                 @SuppressWarnings("unchecked")
