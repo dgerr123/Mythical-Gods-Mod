@@ -1,6 +1,9 @@
 package com.TamModding.mgm.tools;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemStack;
 
 public class HolySword extends SwordsBase {
 
@@ -9,4 +12,10 @@ public class HolySword extends SwordsBase {
         super.registerTextures("HolySword");
     }
 
+    @SideOnly(Side.CLIENT)
+    @Override
+    /* Make the item glow, like enchanted */
+    public boolean hasEffect(ItemStack par1ItemStack) {
+        return true;
+    }
 }
