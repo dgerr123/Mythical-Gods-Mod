@@ -3,6 +3,7 @@ package com.TamModding.mgm;
 import net.minecraft.creativetab.CreativeTabs;
 
 import com.TamModding.mgm.cape.CapeHelper;
+import com.TamModding.mgm.generation.OreGenerator;
 import com.TamModding.mgm.gui.MythicalGodsTab;
 import com.TamModding.mgm.lib.BlockHelper;
 import com.TamModding.mgm.lib.ItemHelper;
@@ -18,6 +19,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
@@ -37,6 +39,8 @@ public class MythicalGods {
         // Initialize the Recipes and Dungeon loot
         RecipeHelper.init();
         LootHelper.init();
+        // Register the OreGenerator
+        GameRegistry.registerWorldGenerator(new OreGenerator());
         // Initialize the CapeHelper
         CapeHelper.init();
         // Set the name for the creative tab
