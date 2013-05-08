@@ -7,7 +7,7 @@ public class ReferenceID {
     public static final int UNHOLYBLOCK = 1023;
     public static final int UNHOLYORE = 1024;
     public static final int CLOUDBLOCK = 1033;
-    // ITEM ID REFERENCE
+    // ITEM ID REFERENCE (INGAME ID = id + 256)
     public static final int TRIDENT = 1025;
     public static final int STAFF = 1026;
     public static final int LIGHTNINGBOLT = 1027;
