@@ -13,8 +13,13 @@ import com.TamModding.mgm.lib.TextureHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class BlocksBase extends Block {
-
     protected Icon tileSide;
     protected String tileSideName;
     protected Icon tileTop;

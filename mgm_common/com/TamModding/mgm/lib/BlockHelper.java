@@ -13,8 +13,13 @@ import com.TamModding.mgm.blocks.UnholyOre;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class BlockHelper {
-
     // Names of all the blocks, in the same order as registered lower in the class
     private static final String[] blockNames = new String[] { "Holy Block", "Olympus Pillar", "Unholy Block", "Unholy Ore", "Cloud Block" };
 

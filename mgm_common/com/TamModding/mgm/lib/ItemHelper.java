@@ -16,8 +16,13 @@ import com.TamModding.mgm.tools.UnholySword;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class ItemHelper {
-
     // Names of all the items, in the same order as registered lower in the class.
     private static final String[] itemNames = new String[] { "Holy Gem", "Holy Sword", "Unholy Gem", "Unholy Sword", "Nether Dust", "Nether Rod" };
 
@@ -41,7 +46,7 @@ public class ItemHelper {
     public static final Item unholySword = new UnholySword(ReferenceID.UNHOLYSWORD, unholyTOOL);
     public static final Item netherDust = new NetherDust(ReferenceID.NETHERDUST);
     public static final Item netherRod = new NetherRod(ReferenceID.NETHERROD);
-    
+
     /*
      * Adding all Items to the main ItemArray Make sure all items are registered here and that the NamesArray contains the same number of items,
      * otherwise this would end in a crash.

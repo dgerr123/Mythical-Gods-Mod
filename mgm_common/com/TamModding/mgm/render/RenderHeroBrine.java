@@ -8,6 +8,12 @@ import net.minecraft.entity.EntityLiving;
 import com.TamModding.mgm.entitys.EntityHeroBrine;
 import com.TamModding.mgm.models.ModelHeroBrine;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class RenderHeroBrine extends RenderLiving {
     protected ModelHeroBrine model;
 

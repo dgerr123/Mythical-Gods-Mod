@@ -3,8 +3,13 @@ package com.TamModding.mgm.generation;
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.BiomeGenBase;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class BiomeMountOlympus extends BiomeGenBase {
-
     public BiomeMountOlympus(int par1) {
         super(par1);
         biomeName = "Mount Olympus";
@@ -18,5 +23,4 @@ public class BiomeMountOlympus extends BiomeGenBase {
     public int getBiomeGrassColor() {
         return 0x1AFF00;
     }
-
 }

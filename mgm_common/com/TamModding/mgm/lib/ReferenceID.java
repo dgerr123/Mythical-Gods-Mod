@@ -1,5 +1,11 @@
 package com.TamModding.mgm.lib;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class ReferenceID {
     // BLOCK ID REFERENCE
     public static final int HOLYBLOCK = 1021;
@@ -18,5 +24,5 @@ public class ReferenceID {
     public static final int UNHOLYSWORD = 1032;
     public static final int NETHERDUST = 1033;
     public static final int NETHERROD = 1034;
-    
+
 }

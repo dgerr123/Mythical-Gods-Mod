@@ -9,6 +9,12 @@ import com.TamModding.mgm.lib.TextureHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class ItemsBase extends Item {
     private String iconPath;
 

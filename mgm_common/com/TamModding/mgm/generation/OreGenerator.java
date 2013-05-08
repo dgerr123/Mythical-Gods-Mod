@@ -10,8 +10,13 @@ import com.TamModding.mgm.lib.BlockHelper;
 
 import cpw.mods.fml.common.IWorldGenerator;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class OreGenerator implements IWorldGenerator {
-
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
         switch (world.provider.dimensionId) {
@@ -24,16 +29,13 @@ public class OreGenerator implements IWorldGenerator {
         }
     }
 
-    private void generateNether(World world, Random random, int i, int j) {
-    }
-
-    private void generateEnd(World world, Random random, int i, int j) {
-    }
+    private void generateNether(World world, Random random, int i, int j) {}
+    private void generateEnd(World world, Random random, int i, int j) {}
 
     private void generateSurface(World world, Random rand, int chunkX, int chunkZ) {
         for (int i = 0; i < 1; i++) {
             int randPosX = chunkX + rand.nextInt(16);
-            int randPosY = rand.nextInt(16);            // Generate the ore on layer 0-15
+            int randPosY = rand.nextInt(16); // Generate the ore on layer 0-15
             int randPosZ = chunkZ + rand.nextInt(16);
             // Generate veins of 3 blocks of Unholy ore
             new WorldGenMinable(BlockHelper.unholyOre.blockID, 3).generate(world, rand, randPosX, randPosY, randPosZ);

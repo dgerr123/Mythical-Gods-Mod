@@ -14,6 +14,12 @@ import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class EntityHeroBrine extends EntityMob {
     public EntityHeroBrine(World par1World) {
         super(par1World);

@@ -14,12 +14,17 @@ import com.TamModding.mgm.lib.Reference;
 import cpw.mods.fml.common.registry.TickRegistry;
 import cpw.mods.fml.relauncher.Side;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding (Msvisser)
+ *         Copyright (c) 2013
+ */
 public class CapeHelper {
-
     /* Array lists to save all players with the capes */
     public static ArrayList<String> listDevs = new ArrayList<String>();
     public static ArrayList<String> listTesters = new ArrayList<String>();
-    
+
     public static void init() {
         // Clear all lists
         listDevs.clear();
@@ -36,15 +41,15 @@ public class CapeHelper {
         // Register tickhandler to set the capes
         TickRegistry.registerTickHandler(new CapeTickHandler(), Side.CLIENT);
     }
-    
+
     /**
      * Retrieves the players on the devs and tester list
      */
     public static void retrievePlayerData() throws IOException {
         // Create a buffered reader for the player files
-        BufferedReader devsReader = new BufferedReader(new InputStreamReader((new URL(Reference.HTTP_CAPES_DEV)).openStream()));
-        BufferedReader testersReader = new BufferedReader(new InputStreamReader((new URL(Reference.HTTP_CAPES_TESTER)).openStream()));
-        
+        BufferedReader devsReader = new BufferedReader(new InputStreamReader(new URL(Reference.HTTP_CAPES_DEV).openStream()));
+        BufferedReader testersReader = new BufferedReader(new InputStreamReader(new URL(Reference.HTTP_CAPES_TESTER).openStream()));
+
         String line = "", username = "";
         // Read all lines in devs
         while ((line = devsReader.readLine()) != null) {
@@ -63,5 +68,5 @@ public class CapeHelper {
             }
         }
     }
-    
+
 }

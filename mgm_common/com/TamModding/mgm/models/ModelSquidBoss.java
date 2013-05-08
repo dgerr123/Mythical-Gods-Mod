@@ -4,8 +4,14 @@ import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class ModelSquidBoss extends ModelBase {
-    // fields
+    // Renderers for all the different parts
     ModelRenderer Body;
     ModelRenderer Pelvis;
     ModelRenderer Bicep1;

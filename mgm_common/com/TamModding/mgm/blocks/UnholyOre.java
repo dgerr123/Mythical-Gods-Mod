@@ -6,8 +6,13 @@ import net.minecraft.block.material.Material;
 
 import com.TamModding.mgm.lib.ItemHelper;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class UnholyOre extends BlocksBase {
-
     public UnholyOre(int par1) {
         super(par1, Material.rock);
         super.registerTexture("UnholyOre");

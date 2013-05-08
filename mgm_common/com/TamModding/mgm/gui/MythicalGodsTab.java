@@ -5,8 +5,13 @@ import net.minecraft.item.ItemStack;
 
 import com.TamModding.mgm.lib.ItemHelper;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class MythicalGodsTab extends CreativeTabs {
-
     public MythicalGodsTab(String label) {
         super(label);
     }

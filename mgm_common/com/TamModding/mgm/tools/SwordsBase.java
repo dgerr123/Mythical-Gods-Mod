@@ -15,8 +15,13 @@ import com.TamModding.mgm.items.ItemsBase;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ *         Copyright (c) 2013
+ */
 public class SwordsBase extends ItemsBase {
-
     private int weaponDamage;
     private final EnumToolMaterial toolMaterial;
 

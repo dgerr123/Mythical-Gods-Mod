@@ -24,11 +24,17 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 @NetworkMod(channels = { Reference.MOD_ID }, clientSideRequired = true, serverSideRequired = false)
+/**
+ * Mythical-Gods-Mod
+ * 
+ * @author TAM Modding
+ * Copyright (c) 2013
+ */
 public class MythicalGods {
-
     @Mod.Instance(Reference.MOD_ID)
     public static MythicalGods instance;
 
+    // Create the MGM Creative tab
     public static final CreativeTabs mythicalgodsTab = new MythicalGodsTab(Reference.MOD_ID);
 
     @PreInit
@@ -48,12 +54,7 @@ public class MythicalGods {
     }
 
     @Init
-    public void init(FMLInitializationEvent event) {
-
-    }
-
+    public void init(FMLInitializationEvent event) {}
     @PostInit
-    public void postInit(FMLPostInitializationEvent event) {
-
-    }
+    public void postInit(FMLPostInitializationEvent event) {}
 }
