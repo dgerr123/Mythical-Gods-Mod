@@ -46,7 +46,7 @@ public class ItemHelper {
     public static final Item unholySword = new UnholySword(ReferenceID.UNHOLYSWORD, unholyTOOL);
     public static final Item netherDust = new NetherDust(ReferenceID.NETHERDUST);
     public static final Item netherRod = new NetherRod(ReferenceID.NETHERROD);
-
+    
     /*
      * Adding all Items to the main ItemArray Make sure all items are registered here and that the NamesArray contains the same number of items,
      * otherwise this would end in a crash.
@@ -73,5 +73,10 @@ public class ItemHelper {
             LanguageRegistry.addName(items.get(i), itemNames[i]);
         }
 
+        // Setting the crafting materials for the TOOL and ARMOR Enums
+        holyTOOL.customCraftingMaterial = holyGem;
+        holyARMOR.customCraftingMaterial = holyGem;
+        unholyTOOL.customCraftingMaterial = unholyGem;
+        unholyARMOR.customCraftingMaterial = unholyGem;
     }
 }
