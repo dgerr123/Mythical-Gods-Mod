@@ -1,5 +1,6 @@
-package com.TamModding.mgm.items;
+package com.TamModding.mgm.item.tools;
 
+import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -10,11 +11,10 @@ import cpw.mods.fml.relauncher.SideOnly;
  * @author TAM Modding
  *         Copyright (c) 2013
  */
-public class HolyGem extends ItemsBase {
-    public HolyGem(int par1) {
-        super(par1);
-        super.registerTextures("HolyGem");
-        this.setMaxStackSize(64);
+public class HolySword extends SwordsBase {
+    public HolySword(int par1, EnumToolMaterial par2EnumToolMaterial) {
+        super(par1, par2EnumToolMaterial);
+        super.registerTextures("HolySword");
     }
 
     @SideOnly(Side.CLIENT)

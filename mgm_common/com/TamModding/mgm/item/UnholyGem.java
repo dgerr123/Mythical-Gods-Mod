@@ -1,4 +1,4 @@
-package com.TamModding.mgm.items;
+package com.TamModding.mgm.item;
 
 /**
  * Mythical-Gods-Mod

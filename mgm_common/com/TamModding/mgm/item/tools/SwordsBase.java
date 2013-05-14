@@ -1,4 +1,4 @@
-package com.TamModding.mgm.items.tools;
+package com.TamModding.mgm.item.tools;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.EnumToolMaterial;

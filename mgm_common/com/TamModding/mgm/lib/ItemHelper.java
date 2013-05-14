@@ -7,12 +7,12 @@ import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.EnumHelper;
 
-import com.TamModding.mgm.items.HolyGem;
-import com.TamModding.mgm.items.NetherDust;
-import com.TamModding.mgm.items.NetherRod;
-import com.TamModding.mgm.items.UnholyGem;
-import com.TamModding.mgm.items.tools.HolySword;
-import com.TamModding.mgm.items.tools.UnholySword;
+import com.TamModding.mgm.item.HolyGem;
+import com.TamModding.mgm.item.NetherDust;
+import com.TamModding.mgm.item.NetherRod;
+import com.TamModding.mgm.item.UnholyGem;
+import com.TamModding.mgm.item.tools.HolySword;
+import com.TamModding.mgm.item.tools.UnholySword;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
 

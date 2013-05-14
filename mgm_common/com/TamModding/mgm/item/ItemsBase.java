@@ -1,4 +1,4 @@
-package com.TamModding.mgm.items;
+package com.TamModding.mgm.item;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;

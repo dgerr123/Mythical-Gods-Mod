@@ -1,4 +1,4 @@
-package com.TamModding.mgm.blocks;
+package com.TamModding.mgm.block;
 
 import java.util.Random;
 

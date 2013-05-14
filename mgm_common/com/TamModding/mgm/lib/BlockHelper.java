@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 import net.minecraft.block.Block;
 
-import com.TamModding.mgm.blocks.CloudBlock;
-import com.TamModding.mgm.blocks.HolyBlock;
-import com.TamModding.mgm.blocks.MarbleBlock;
-import com.TamModding.mgm.blocks.OlympusPillar;
-import com.TamModding.mgm.blocks.UnholyBlock;
-import com.TamModding.mgm.blocks.UnholyOre;
+import com.TamModding.mgm.block.CloudBlock;
+import com.TamModding.mgm.block.HolyBlock;
+import com.TamModding.mgm.block.MarbleBlock;
+import com.TamModding.mgm.block.OlympusPillar;
+import com.TamModding.mgm.block.UnholyBlock;
+import com.TamModding.mgm.block.UnholyOre;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
