@@ -1,4 +1,4 @@
-package com.TamModding.mgm.cape;
+package com.TamModding.mgm.lib.cape;
 
 import java.util.EnumSet;
 import java.util.List;

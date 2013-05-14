@@ -2,14 +2,14 @@ package com.TamModding.mgm;
 
 import net.minecraft.creativetab.CreativeTabs;
 
-import com.TamModding.mgm.cape.CapeHelper;
-import com.TamModding.mgm.generation.OreGenerator;
 import com.TamModding.mgm.gui.MythicalGodsTab;
 import com.TamModding.mgm.lib.BlockHelper;
 import com.TamModding.mgm.lib.ItemHelper;
 import com.TamModding.mgm.lib.LootHelper;
 import com.TamModding.mgm.lib.RecipeHelper;
 import com.TamModding.mgm.lib.Reference;
+import com.TamModding.mgm.lib.cape.CapeHelper;
+import com.TamModding.mgm.world.OreGenerator;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;

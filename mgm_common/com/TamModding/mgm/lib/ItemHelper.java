@@ -11,8 +11,8 @@ import com.TamModding.mgm.items.HolyGem;
 import com.TamModding.mgm.items.NetherDust;
 import com.TamModding.mgm.items.NetherRod;
 import com.TamModding.mgm.items.UnholyGem;
-import com.TamModding.mgm.tools.HolySword;
-import com.TamModding.mgm.tools.UnholySword;
+import com.TamModding.mgm.items.tools.HolySword;
+import com.TamModding.mgm.items.tools.UnholySword;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
